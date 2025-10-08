@@ -77,6 +77,12 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
       <div className="container relative py-5 sm:py-12">
         {!$canManageCurrentRoadmap && <CustomRoadmapAlert />}
 
+        <div className="mb-2 text-sm text-gray-500">
+          <a href="/community" className="hover:text-gray-700">
+            Community Roadmaps
+          </a>
+        </div>
+
         {creator?.name && (
           <div className="-mb-1 flex items-center gap-1.5 text-sm text-gray-500">
             <img
